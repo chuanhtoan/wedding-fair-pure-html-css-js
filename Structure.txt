@@ -1,0 +1,20 @@
+header
+	section.top-bar
+	section.info
+		nav.top-nav
+		.logo
+		.sign-up-btn
+main
+	section.event-info
+	section.event-schedule
+	section.popular-event
+	section.guest
+	section.exhibition
+	section.promotion
+	section.news
+	section.sponsor
+footer
+	section.contact
+		.contact__info
+		.contact__location
+	section.copyright
