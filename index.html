@@ -35,7 +35,7 @@
         </div>
 
         <div class="header__info">
-            <div class="wraper">
+            <div class="header__info--desktop">
                 <div class="header__info--fixed">
                     <div class="wraper">
                         <nav class="header__info--nav">
@@ -55,7 +55,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="header__info--sticky header__info--disable">
+                <div class="header__info--sticky disable">
                     <div class="wraper">
                         <div class="header__info--logo">
                             <img src="images/hero-logo.png" alt="logo">
@@ -72,21 +72,59 @@
                         </nav>
                     </div>
                 </div>
-                <div class="header__info--hamburger header__info--disable">
-                    <div class="header__info--logo">
-                        <img src="images/hero-logo.png" alt="logo">
-                    </div>
-                    <div class="container" onclick="hamburger(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
+            </div>
+            <div class="header__info--hamburger">
+                <div class="header__info--hamburger-fixed">
+                    <div class="wraper">
+                        <div class="header__info--hamburger-logo">
+                            <img src="images/hero-logo.png" alt="logo">
+                        </div>
+                        <a href="#">
+                            <i class="fas fa-pencil-alt"></i>
+                            <h6 id="fixed-btn-text">Đăng ký</h6>
+                        </a>
+                        <div class="container" onclick="hamburger(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <nav id="menu">
+                            <a href="#">TRANG CHỦ</a>
+                            <a href="#event-info">GIỚI THIỆU</a>
+                            <a href="#event-schedule">LỊCH SỰ KIỆN</a>
+                            <a href="#guest">HOẠT ĐỘNG</a>
+                            <a href="#exhibition">TRIỂN LÃM</a>
+                            <a href="#promotion">KHUYẾN MÃI</a>
+                            <a href="#news">TIN TỨC</a>
+                            <a class="active" href="#sponsor">TÀI TRỢ</a>
+                        </nav>
                     </div>
                 </div>
-                <div class="fixed-btn">
-                    <a href="#">
-                        <i class="fas fa-pencil-alt"></i>
-                        <h6>ĐĂNG KÝ NHẬN VÉ MỜI</h6>
-                    </a>
+                <div class="header__info--hamburger-sticky disable">
+                    <div class="wraper">
+                        <div class="header__info--hamburger-logo">
+                            <img src="images/hero-logo.png" alt="logo">
+                        </div>
+                        <a href="#">
+                            <i class="fas fa-pencil-alt"></i>
+                            <h6 id="fixed-btn-text">Đăng ký</h6>
+                        </a>
+                        <div class="container" onclick="hamburger(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <nav id="menu">
+                            <a href="#">TRANG CHỦ</a>
+                            <a href="#event-info">GIỚI THIỆU</a>
+                            <a href="#event-schedule">LỊCH SỰ KIỆN</a>
+                            <a href="#guest">HOẠT ĐỘNG</a>
+                            <a href="#exhibition">TRIỂN LÃM</a>
+                            <a href="#promotion">KHUYẾN MÃI</a>
+                            <a href="#news">TIN TỨC</a>
+                            <a class="active" href="#sponsor">TÀI TRỢ</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
@@ -477,6 +515,14 @@
             </div>
         </section>
     </footer>
+
+    <!-- Fixed Button -->
+    <div class="fixed-btn">
+        <a href="#">
+            <i class="fas fa-pencil-alt"></i>
+            <h6 id="fixed-btn-text">ĐĂNG KÝ NHẬN VÉ MỜI</h6>
+        </a>
+    </div>
 
     <!-- Custome JS -->
     <script src="main.js"></script>
