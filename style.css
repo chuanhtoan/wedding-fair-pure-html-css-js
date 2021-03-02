@@ -1,4 +1,8 @@
 /* For All Files */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 20px;
 }
@@ -8,6 +12,29 @@ a {
   color: black;
 }
 
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #C2B093;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #D15D73;
+}
+
+/* End Scrollbar */
 .wraper {
   max-width: 1170px;
   margin: 0 auto;
@@ -119,6 +146,16 @@ a {
   width: 100vw;
   z-index: 999;
   padding-bottom: 16px;
+}
+
+.header__info--hamburger {
+  padding-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__info--nav {
@@ -346,6 +383,7 @@ a {
   width: 100%;
   height: 392px;
   overflow-y: scroll;
+  z-index: 1;
 }
 
 .event-schedule__list {
@@ -590,6 +628,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: 'Roboto', sans-serif;
+  z-index: 1;
 }
 
 .news__content--bignews {
@@ -652,6 +691,9 @@ a {
 
 .contact {
   background-color: #FDFAF2;
+  background-image: url(images/map.png);
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 .contact .wraper {
@@ -664,7 +706,8 @@ a {
 }
 
 .contact__info {
-  padding-right: 200px;
+  background-color: #FDFAF2;
+  padding-right: 80px;
   padding-bottom: 50px;
 }
 
@@ -815,6 +858,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  z-index: 9999;
 }
 
 .fixed-btn a i {
@@ -827,4 +871,35 @@ a {
   font-size: 12px;
   line-height: 1.3;
 }
+
+/* Hamburger Menu */
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Responsive */
 /*# sourceMappingURL=style.css.map */

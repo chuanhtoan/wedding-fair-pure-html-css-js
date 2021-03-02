@@ -40,18 +40,18 @@
                     <div class="wraper">
                         <nav class="header__info--nav">
                             <a class="active" href="#">TRANG CHỦ</a>
-                            <a href="#">GIỚI THIỆU</a>
-                            <a href="#">LỊCH SỰ KIỆN</a>
-                            <a href="#">HOẠT ĐỘNG</a>
+                            <a href="#event-info">GIỚI THIỆU</a>
+                            <a href="#event-schedule">LỊCH SỰ KIỆN</a>
+                            <a href="#guest">HOẠT ĐỘNG</a>
                         </nav>
                         <div class="header__info--logo">
                             <img src="images/hero-logo.png" alt="logo">
                         </div>
                         <nav class="header__info--nav">
-                            <a href="#">TRIỂN LÃM</a>
-                            <a href="#">KHUYẾN MÃI</a>
-                            <a href="#">TIN TỨC</a>
-                            <a href="#">TÀI TRỢ</a>
+                            <a href="#exhibition">TRIỂN LÃM</a>
+                            <a href="#promotion">KHUYẾN MÃI</a>
+                            <a href="#news">TIN TỨC</a>
+                            <a href="#sponsor">TÀI TRỢ</a>
                         </nav>
                     </div>
                 </div>
@@ -62,22 +62,38 @@
                         </div>
                         <nav class="header__info--nav">
                             <a class="active" href="#">TRANG CHỦ</a>
-                            <a href="#">GIỚI THIỆU</a>
-                            <a href="#">LỊCH SỰ KIỆN</a>
-                            <a href="#">HOẠT ĐỘNG</a>
-                            <a href="#">TRIỂN LÃM</a>
-                            <a href="#">KHUYẾN MÃI</a>
-                            <a href="#">TIN TỨC</a>
-                            <a href="#">TÀI TRỢ</a>
+                            <a href="#event-info">GIỚI THIỆU</a>
+                            <a href="#event-schedule">LỊCH SỰ KIỆN</a>
+                            <a href="#guest">HOẠT ĐỘNG</a>
+                            <a href="#exhibition">TRIỂN LÃM</a>
+                            <a href="#promotion">KHUYẾN MÃI</a>
+                            <a href="#news">TIN TỨC</a>
+                            <a href="#sponsor">TÀI TRỢ</a>
                         </nav>
                     </div>
+                </div>
+                <div class="header__info--hamburger header__info--disable">
+                    <div class="header__info--logo">
+                        <img src="images/hero-logo.png" alt="logo">
+                    </div>
+                    <div class="container" onclick="hamburger(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="fixed-btn">
+                    <a href="#">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h6>ĐĂNG KÝ NHẬN VÉ MỜI</h6>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="event-info">
+        <section class="event-info" id="event-info">
             <div class="wraper">
                 <div class="event-info__image">
                     <img src="images/event-info.png">
@@ -92,7 +108,7 @@
             </div>
         </section>
 
-        <section class="event-schedule">
+        <section class="event-schedule" id="event-schedule">
             <div class="wraper">
                 <h2 class="section__title">LỊCH SỰ KIỆN</h2>
                 <img class="section__title--logo" src="images/event-logo.png">
@@ -187,7 +203,7 @@
             </div>
         </section>
 
-        <section class="guest">
+        <section class="guest" id="guest">
             <div class="wraper">
                 <h2 class="section__title">KHÁCH MỜI</h2>
                 <img class="section__title--logo" src="images/event-logo.png">
@@ -236,7 +252,7 @@
             </div>
         </section>
 
-        <section class="exhibition">
+        <section class="exhibition" id="exhibition">
             <div class="wraper">
                 <h2 class="section__title">GIAN HÀNG TRIỂN LÃM</h2>
                 <img class="section__title--logo" src="images/event-logo.png">
@@ -290,7 +306,7 @@
             </div>
         </section>
 
-        <section class="promotion">
+        <section class="promotion" id="promotion">
             <div class="wraper">
                 <h2 class="section__title">KHUYẾN MÃI MÙA CƯỚI</h2>
                 <img class="section__title--logo" src="images/event-logo.png">
@@ -340,7 +356,7 @@
             </div>
         </section>
 
-        <section class="news">
+        <section class="news" id="news">
             <div class="wraper">
                 <h2 class="section__title">TIN TỨC LIÊN QUAN</h2>
                 <img class="section__title--logo" src="images/event-logo.png">
@@ -377,7 +393,7 @@
             </div>
         </section>
 
-        <section class="sponsor">
+        <section class="sponsor" id="sponsor">
             <div class="wraper">
                 <h2 class="section__title">TÀI TRỢ</h2>
                 <img class="section__title--logo" src="images/event-logo.png">
@@ -443,9 +459,6 @@
                         </ul>
                     </div>
                 </div>
-                <div class="contact__map">
-                    Map
-                </div>
             </div>
         </section>
 
@@ -464,14 +477,6 @@
             </div>
         </section>
     </footer>
-
-    <!-- Fixed Button -->
-    <div class="fixed-btn">
-        <a href="#">
-            <i class="fas fa-pencil-alt"></i>
-            <h6>ĐĂNG KÝ NHẬN VÉ MỜI</h6>
-        </a>
-    </div>
 
     <!-- Custome JS -->
     <script src="main.js"></script>
