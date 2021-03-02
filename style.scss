@@ -430,7 +430,7 @@ a {
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         &--item {
             background-color: white;
             margin-bottom: 34px;
@@ -472,7 +472,7 @@ a {
     &__list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         &--item {
             width: 269px;
             background-color: white;
@@ -572,18 +572,18 @@ a {
 }
 
 .contact {
+    display: flex;
     background-color: $background-color;
-    background-image: url(images/map.png);
-    background-repeat: no-repeat;
-    background-position: center right;
-    & .wraper {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__info {
-        background-color: $background-color;
-        padding-right: 80px;
+    overflow: hidden;
+        &__info {
+            & .wraper {
+                display: flex;
+                flex-direction: column;
+            }
+        width: 40%;
         padding-bottom: 50px;
+        padding-right: 80px;
+        padding-left: 150px;
         div {
             font-family: 'Roboto', sans-serif;
             color: $primary-color;
@@ -601,6 +601,13 @@ a {
                     color: black;
                 }
             }
+        }
+    }
+    &__map {
+        width: 60%;
+        height: 350px;
+        img {
+            height: 350px;
         }
     }
 }
@@ -646,9 +653,6 @@ a {
     }
     &__list {
         width: 100%;
-        list-style-type: square;
-        list-style-position: outside;
-        list-style-image: none;
         &--item {
             display: flex;
             align-items: center;
@@ -791,6 +795,9 @@ a {
     .fixed-btn {
         display: none;
     }
+    .contact__info {
+        padding-left: 40px;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -803,7 +810,9 @@ a {
             width: 100%;
         }
     }
-
+    .contact__info {
+        padding-left: 20px;
+    }
 }
 .event-schedule__list {
     ul {
