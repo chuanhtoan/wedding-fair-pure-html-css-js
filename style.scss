@@ -587,10 +587,6 @@ a {
         div {
             font-family: 'Roboto', sans-serif;
             color: $primary-color;
-            h2 {
-                font-size: 20px;
-                font-weight: 700;
-            }
             li {
                 font-size: 16px;
                 i {
@@ -815,12 +811,8 @@ a {
     }
 }
 .event-schedule__list {
-    ul {
-        li {
-            h6, p {
-                white-space: nowrap;
-            }
-        }
+    h6, p {
+        white-space: nowrap;
     }
 }
 

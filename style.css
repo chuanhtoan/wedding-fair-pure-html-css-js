@@ -781,11 +781,6 @@ a {
   color: #D15D73;
 }
 
-.contact__info div h2 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
 .contact__info div li {
   font-size: 16px;
 }
@@ -1062,7 +1057,7 @@ a {
   }
 }
 
-.event-schedule__list ul li h6, .event-schedule__list ul li p {
+.event-schedule__list h6, .event-schedule__list p {
   white-space: nowrap;
 }
 
