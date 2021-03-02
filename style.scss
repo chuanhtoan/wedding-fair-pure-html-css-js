@@ -669,7 +669,9 @@ a {
                 }
             }
             div {
-                position: relative;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
                 margin: 0 auto;
                 img {
                     margin: 6px;
