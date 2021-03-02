@@ -116,6 +116,8 @@ a {
         &--hamburger {
             position: relative;
             // &-fixed {
+            //     position: sticky;
+            //     top: 0;
             // }
             &-sticky {
                 background-color: $background-color;
@@ -179,11 +181,14 @@ a {
 
 #menu {
     background-color: white;
-    position: absolute;
-    top: 90%;
+    position: fixed;
+    top: 20%;
     right: 0;
-    opacity: 0;
-    transition: opacity ease-in-out .25s;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    // transition: all ease-in-out .25s;
     a {
         font-family: 'Roboto', sans-serif;
         background-color: white;
@@ -268,7 +273,9 @@ a {
         height: 203px;
         background: url(images/event-schedule-bg-bottom.png) no-repeat;
     }
-
+    h2, img, &__date {
+        z-index: 1;
+    }
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     height: 800px;
@@ -282,7 +289,6 @@ a {
         justify-content: center;
         margin-bottom: 45px;
         position: relative;
-        z-index: 1;
         &--circle {
             display: flex;
             flex-direction: column;
@@ -522,7 +528,6 @@ a {
         z-index: 1;
         &--bignews {
             width: 500px;
-            margin-right: 32px;
             h6 {
                 padding: 18px 0;
                 font-weight: 700;
@@ -531,12 +536,12 @@ a {
             }
         }
         &--list {
+            width: 650px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             &--item {
                 display: flex;
-                background-color: white;
                 margin-bottom: 34px;
                 div {
                     margin-left: 20px;
@@ -730,6 +735,30 @@ a {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+// Modal
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
 .header__info {
     &--desktop {
         display: block;
@@ -740,6 +769,16 @@ a {
 }
 
 /* Responsive */
+@media all and (max-width: 1200px) {
+    .news__content {
+        flex-direction: column;
+        align-items: center;
+        &--bignews {
+            margin-bottom: 40px;
+        }
+    }
+}
+
 @media all and (max-width: 1140px) {
     .header__info {
         &--desktop {
@@ -751,5 +790,34 @@ a {
     }
     .fixed-btn {
         display: none;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .event-info {
+        & .wraper {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__image img {
+            width: 100%;
+        }
+    }
+
+}
+.event-schedule__list {
+    ul {
+        li {
+            h6, p {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 782px) {
+    .exhibition__list {
+        flex-direction: column;
+        align-items: center;
     }
 }

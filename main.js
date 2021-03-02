@@ -7,21 +7,30 @@ function scrollFunction() {
 
         document.querySelector(".header__info--hamburger-fixed").classList.add('disable')
         document.querySelector(".header__info--hamburger-sticky").classList.remove('disable')
+
+        document.querySelector("#menu").style.top = '19%'
+        document.querySelector("#overlay").style.top = '19%'
     } else {
         document.querySelector(".header__info--sticky").classList.add('disable')
         document.querySelector(".header__info--fixed").classList.remove('disable')
 
         document.querySelector(".header__info--hamburger-sticky").classList.add('disable')
         document.querySelector(".header__info--hamburger-fixed").classList.remove('disable')
+
+        document.querySelector("#menu").style.top = '28%'
+        document.querySelector("#overlay").style.top = '28%'
     }
 }
 
 function hamburger(x) {
-    x.classList.toggle("change")
     if (x.classList.contains("change")) {
-        document.querySelector('#menu').style.opacity = '1';
+        document.querySelectorAll('.container').forEach(hamburger => {hamburger.classList.remove("change")})
+        document.querySelector("#menu").classList.add('disable')
+        document.querySelector("#overlay").classList.add('disable')
     } else {
-        document.querySelector('#menu').style.opacity = '0';
+        document.querySelectorAll('.container').forEach(hamburger => {hamburger.classList.add("change")})
+        document.querySelector("#menu").classList.remove('disable')
+        document.querySelector("#overlay").classList.remove('disable')
     }
 }
 
