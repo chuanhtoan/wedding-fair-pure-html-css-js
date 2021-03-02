@@ -25,12 +25,12 @@ function scrollFunction() {
 function hamburger(x) {
     if (x.classList.contains("change")) {
         document.querySelectorAll('.container').forEach(hamburger => {hamburger.classList.remove("change")})
-        document.querySelector("#menu").classList.add('disable')
-        document.querySelector("#overlay").classList.add('disable')
+        document.querySelector("#menu").classList.add('hidden')
+        document.querySelector("#overlay").classList.add('hidden')
     } else {
         document.querySelectorAll('.container').forEach(hamburger => {hamburger.classList.add("change")})
-        document.querySelector("#menu").classList.remove('disable')
-        document.querySelector("#overlay").classList.remove('disable')
+        document.querySelector("#menu").classList.remove('hidden')
+        document.querySelector("#overlay").classList.remove('hidden')
     }
 }
 
