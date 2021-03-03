@@ -295,6 +295,10 @@ a {
   color: #D15D73;
 }
 
+.menu a:hover {
+  color: #D15D73;
+}
+
 /*------------------------- MAIN ----------------------------*/
 .event-info {
   text-align: center;
