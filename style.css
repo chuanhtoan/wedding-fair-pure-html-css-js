@@ -80,6 +80,10 @@ a {
   padding: 0 20px;
 }
 
+.section {
+  margin-bottom: 50px;
+}
+
 .section__title {
   font-size: 42px;
   color: #D15D73;
@@ -303,7 +307,6 @@ a {
 .event-info {
   text-align: center;
   line-height: 1.5;
-  margin-bottom: 50px;
 }
 
 .event-info .wraper {
@@ -353,7 +356,6 @@ a {
 }
 
 .event-schedule {
-  margin-bottom: 50px;
   background-color: #FDFAF2;
   position: relative;
   font-family: 'Roboto', sans-serif;
@@ -538,10 +540,6 @@ a {
   color: #D15D73;
 }
 
-.guest {
-  margin-bottom: 50px;
-}
-
 .guest .wraper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -580,7 +578,6 @@ a {
 
 .exhibition {
   padding-bottom: 40px;
-  margin-bottom: 50px;
   background-color: #FDFAF2;
 }
 
@@ -640,7 +637,6 @@ a {
 
 .promotion {
   padding-bottom: 40px;
-  margin-bottom: 50px;
 }
 
 .promotion .wraper {
@@ -703,7 +699,6 @@ a {
 
 .news {
   padding-bottom: 40px;
-  margin-bottom: 50px;
   background-color: #FDFAF2;
   position: relative;
 }
@@ -895,7 +890,6 @@ a {
 
 .sponsor {
   padding-bottom: 40px;
-  margin-bottom: 50px;
 }
 
 .sponsor .wraper {
