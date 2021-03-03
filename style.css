@@ -515,6 +515,7 @@ a {
 .event-schedule__schedules {
   width: 100%;
   height: 392px;
+  overflow-x: hidden;
   overflow-y: scroll;
   z-index: 1;
   position: relative;
