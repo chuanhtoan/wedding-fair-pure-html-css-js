@@ -86,6 +86,7 @@ body {
         color: $primary-color;
         margin-bottom: 20px;
         padding-top: 50px;
+        text-align: center;
         &--logo {
             width: 120px;
             margin-bottom: 40px;
@@ -615,9 +616,6 @@ body {
         }
         &--list {
             width: 51%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             &--item {
                 display: flex;
                 margin-bottom: 34px;
@@ -682,6 +680,9 @@ body {
         & .wraper {
             display: flex;
             flex-direction: column;
+        }
+        .section__title {
+            text-align: start;
         }
     }
     &__map {
@@ -908,32 +909,9 @@ body {
     .wraper {
         max-width: 738px;
     }
-    .exhibition__list {
-        justify-content: center;
-    }
-    .exhibition__list--item {
-        width: 98%;
-        .card-link {
-            padding: 28px;
-            font-size: 28px;
-        }
-    }
     .guest__list--item {
         margin: 0 auto 32px;
         width: 40%;
-    }
-    .promotion {
-        &__list--item {
-            margin: 0 auto 34px;
-            width: 98%;
-            .promotion__description {
-                font-size: 30px;
-            }
-        }
-    }
-    .exhibition__list--item .mark, .promotion__list--item .mark {
-        font-size: 30px;
-        padding: 25px;
     }
     .copyright .header__ngoisao-logo, .header__shop-logo, .copyright-icon {
         margin: 0;
@@ -972,5 +950,161 @@ body {
         margin-right: 10px;
         min-width: 200px;
         white-space: nowrap;
+    }
+    .event-schedule__list .schedule__list--title {
+        margin-right: 40px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .wraper {
+        max-width: 580px;
+        padding: 0 10px;
+    }
+    .exhibition__list {
+        justify-content: center;
+        &--item {
+            width: 98%;
+            .card-link {
+                padding: 28px;
+                font-size: 28px;
+            }
+        }
+    }
+    .promotion {
+        &__list--item {
+            margin: 0 auto 34px;
+            width: 98%;
+            .promotion__description {
+                font-size: 30px;
+            }
+        }
+    }
+    .exhibition__list--item .mark, .promotion__list--item .mark {
+        font-size: 30px;
+        padding: 25px;
+    }
+    .contact {
+        &__info, &__map {
+            width: 50%;
+        }
+    }
+    .event-schedule::after, .event-schedule::before {
+        display: none;
+    }
+    .event-schedule__list {
+        margin: 0;
+    }
+    .event-schedule .wraper::after {
+        left: 0;
+    }
+    .contact {
+        &__info {
+            width: 100%;
+        }
+        &__map {
+            display: none;
+        }
+    }
+    .sponsor__list--image-container {
+        display: flex;
+        overflow: hidden;
+    }
+    .sponsor .wraper {
+        padding: 0 24px;
+    }
+    .copyright__description {
+        display: none;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .wraper {
+        max-width: 460px;
+    }
+    .header__top-bar--logo {
+        display: none;
+    }
+    .header__top-bar--account {
+        margin-left: auto;
+    }
+    .exhibition__list--item .mark, .promotion__list--item .mark {
+        font-size: 26px;
+        padding: 14px;
+    }
+    .event-schedule__date {
+        &--from {
+            margin-right: 46px;
+            padding-right: 6px;
+        }
+        &--to {
+            padding-left: 40px;
+        }
+    }
+    .news__content--list--item {
+        align-items: center;
+    }
+    .news-description {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .contact__info {
+        padding: 0 0 36px 40px;
+    }
+}
+@media all and (max-width: 360px) {
+    .wraper {
+        max-width: 340px;
+    }
+    .hamburger-logo {
+        display: none;
+    }
+    .guest__list--item {
+        margin: 0 auto 32px;
+        width: 70%;
+    }
+    .event-schedule__date {
+        &--from {
+            margin-right: 26px;
+            padding-right: 0;
+            width: 158px;
+        }
+        &--to {
+            padding-left: 16px;
+            width: 158px;
+        }
+    }
+    .event-schedule__list .schedule__list--title {
+        margin-right: 26px;
+    }
+    .news-text {
+        width: 600px;
+    }
+    .news--link {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        padding: 0 !important;
+        margin-bottom: 6px;
+    }
+    .news__content .news-description {
+        line-height: 1.2;
+    }
+    .contact__info {
+        padding: 0 0 36px 0;
+    }
+}
+@media all and (max-width: 320px) {
+    .wraper {
+        max-width: 300px;
+    }
+    .copyright__link .copyright-icon {
+        margin-left: 14px;
+    }
+    .sponsor__list {
+        overflow: hidden;
     }
 }
