@@ -3,6 +3,10 @@ $primary-color: #D15D73;
 $secondary-color: #C2B093;
 $background-color: #FDFAF2;
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -160,7 +164,7 @@ body {
                 padding-bottom: 16px;
                 z-index: 999;
             }
-            a {
+            .fixed-btn-fixed {
                 width: 110px;
                 height: 32px;
                 border-radius: 4px;
@@ -172,12 +176,12 @@ body {
                 align-items: center;
                 color: white;
                 z-index: 9999;
-                i {
+                &__icon {
                     border-right: 1px solid white;
                     padding: 4px 8px;
                     margin-right: 10px;
                 }
-                h6 {
+                &__text {
                     font-size: 14px;
                     line-height: 1.3;
                 }
@@ -313,7 +317,7 @@ body {
         height: 203px;
         background: url(images/event-schedule-bg-bottom.png) no-repeat;
     }
-    h2, img, &__date {
+    .section__title, .section__title--logo, &__date {
         z-index: 1;
     }
     font-family: 'Roboto', sans-serif;
@@ -424,15 +428,15 @@ body {
             position: relative;
             top: 2px;
         }
-        ul {
+        .schedule__list {
             border-top: 2px solid $secondary-color;
             padding-top: 16px;
-        }
-        ul li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 13px;
-            h6 {
+            &--item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 13px;
+            }
+            &--title {
                 margin-right: 150px;
                 font-size: 17px;
                 font-weight: 700;
@@ -553,7 +557,7 @@ body {
                 background-color: rgba(0, 0, 0, 0.4);
                 padding: 10px;
                 border-radius: 8px;
-                i {
+                &-icon {
                     color: #FE0100;
                     margin-right: 8px;
                 }
@@ -648,18 +652,18 @@ body {
         padding-bottom: 36px;
         padding-right: 80px;
         padding-left: 150px;
-        div {
+        &--container {
             font-family: 'Roboto', sans-serif;
             color: $primary-color;
-            li {
+            .contact__item {
                 font-size: 16px;
-                i {
-                    padding: 18px 20px 0 0;
-                }
-                span {
-                    font-size: 18px;
-                    color: black;
-                }
+            }
+            .contact__icon {
+                padding: 18px 20px 0 0;
+            }
+            .contact__text {
+                font-size: 18px;
+                color: black;
             }
         }
         & .wraper {
@@ -671,7 +675,7 @@ body {
         width: 60%;
         height: 350px;
         overflow: hidden;
-        img {
+        &--image {
             height: 100%;
         }
     }
@@ -686,22 +690,25 @@ body {
     &__logo {
         display: flex;
         align-items: center;
-        img {
+        .header__ngoisao-logo {
             width: 112px;
-            &:last-child {
-                width: 76px;
-                margin-left: 30px;
-            }
+        }
+        .header__shop-logo {
+            width: 76px;
+            margin-left: 30px;
+        }
+        img {
+            width: 100%;
         }
     }
-    p {
+    &__description {
         margin: 0 auto;
         font-size: 17px;
         font-weight: 400;
     }
     &__link {
         margin-left: auto;
-        i {
+        .copyright-icon {
             margin-left: 20px;
             color: #666666;
         }
@@ -720,58 +727,56 @@ body {
         &--item {
             display: flex;
             align-items: center;
-            span {
-                font-size: 18px;
-                font-weight: 700;
+        }
+        &--title {
+            font-size: 18px;
+            font-weight: 700;
+            color: $primary-color;
+            width: 200px;
+            position: relative;
+            margin-right: 50px;
+            &::after {
+                content: '.';
+                position: absolute;
+                bottom: 2px;
+                left: -20px;
+                font-size: 32px;
                 color: $primary-color;
-                width: 200px;
-                position: relative;
-                margin-right: 50px;
-                &::after {
-                    content: '.';
-                    position: absolute;
-                    bottom: 2px;
-                    left: -20px;
-                    font-size: 32px;
-                    color: $primary-color;
-                }
             }
-            div {
-                display: inline-block;
-                img {
-                    margin: 6px;
-                }
-            }
+        }
+        &--image-container {
+            display: inline-block;
+        }
+        &--image {
+            margin: 6px;
         }
     }
 }
 
 .fixed-btn {
-    a {
-        position: fixed;
-        top: 80vh;
-        right: 0;
+    position: fixed;
+    top: 80vh;
+    right: 0;
 
-        width: 180px;
-        height: 32px;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-        background-color: $primary-color;
+    width: 180px;
+    height: 32px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: $primary-color;
 
-        padding: 4px;
-        display: flex;
-        align-items: center;
-        color: white;
-        z-index: 9999;
-        i {
-            border-right: 1px solid white;
-            padding: 4px 8px;
-            margin-right: 10px;
-        }
-        h6 {
-            font-size: 12px;
-            line-height: 1.3;
-        }
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    color: white;
+    z-index: 9999;
+    &__icon {
+        border-right: 1px solid white;
+        padding: 4px 8px;
+        margin-right: 10px;
+    }
+    &__text {
+        font-size: 13px;
+        line-height: 1.2;
     }
 }
 
@@ -875,6 +880,10 @@ body {
             width: 28%;
         }
     }
+    .exhibition__list--item .mark, .promotion__list--item .mark {
+        font-size: 20px;
+        padding: 15px;
+    }
 }
 
 @media all and (max-width: 768px) {
@@ -899,16 +908,25 @@ body {
         &__list--item {
             margin: 0 auto 34px;
             width: 98%;
-        }
-        &__description {
-            font-size: 30px !important;
+            .promotion__description {
+                font-size: 30px;
+            }
         }
     }
-    .copyright {
-        img, i {
-            margin: 0;
-            padding: 0;
-        }
+    .exhibition__list--item .mark, .promotion__list--item .mark {
+        font-size: 30px;
+        padding: 25px;
+    }
+    .copyright .header__ngoisao-logo, .header__shop-logo, .copyright-icon {
+        margin: 0;
+        padding: 0;
+    }
+    .copyright .header__ngoisao-logo {
+        width: 90px;
+    }
+    .copyright .header__shop-logo {
+        width: 64px;
+        margin-left: 10px
     }
     .news__content {
         justify-content: center;
