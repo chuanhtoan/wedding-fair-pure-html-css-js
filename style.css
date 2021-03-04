@@ -973,9 +973,10 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: #D15D73;
-  width: 200px;
+  min-width: 200px;
+  margin-right: 10px;
+  white-space: nowrap;
   position: relative;
-  margin-right: 50px;
 }
 
 .sponsor__list--title::after {
@@ -1192,6 +1193,11 @@ body {
   }
   .event-info__info {
     width: 98%;
+  }
+  .sponsor__list--title {
+    margin-right: 10px;
+    min-width: 200px;
+    white-space: nowrap;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -732,9 +732,11 @@ body {
             font-size: 18px;
             font-weight: 700;
             color: $primary-color;
-            width: 200px;
+
+            min-width: 200px;
+            margin-right: 10px;
+            white-space: nowrap;
             position: relative;
-            margin-right: 50px;
             &::after {
                 content: '.';
                 position: absolute;
@@ -949,5 +951,10 @@ body {
         &__info {
             width: 98%;
         }
+    }
+    .sponsor__list--title {
+        margin-right: 10px;
+        min-width: 200px;
+        white-space: nowrap;
     }
 }
