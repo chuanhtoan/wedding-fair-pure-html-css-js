@@ -848,6 +848,10 @@ body {
         height: 100%;
         width: auto;
     }
+    .header__info {
+        background-size: auto;
+        height: 861px;
+    }
 }
 @media all and (max-width: 1280px) {
     .wraper {
@@ -866,8 +870,6 @@ body {
 
 @media all and (max-width: 1140px) {
     .header__info {
-        background-size: auto;
-        height: 861px;
         &--desktop {
             display: none;
         }
