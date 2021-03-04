@@ -472,7 +472,7 @@ body {
 
 .event-schedule__date--from, .event-schedule__date--to {
   background-color: #FDFAF2;
-  width: 200px;
+  width: 210px;
   z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
