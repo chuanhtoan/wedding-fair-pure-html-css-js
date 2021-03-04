@@ -157,6 +157,7 @@ body {
   background-image: url(images/hero-banner.png);
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
   height: 861px;
 }
 
@@ -1081,6 +1082,9 @@ body {
 
 /* Responsive */
 @media all and (max-width: 1140px) {
+  .header__info {
+    background-size: auto;
+  }
   .header__info--desktop {
     display: none;
   }
