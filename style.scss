@@ -134,7 +134,7 @@ body {
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
-        height: 861px;
+        height: 1200px;
         & .wraper {
             padding-top: 16px;
             display: flex;
@@ -837,6 +837,7 @@ body {
 @media all and (max-width: 1140px) {
     .header__info {
         background-size: auto;
+        height: 861px;
         &--desktop {
             display: none;
         }
