@@ -843,7 +843,7 @@ body {
 }
 
 /* Responsive */
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1920px) {
     .contact__map--image {
         height: 100%;
         width: auto;
@@ -896,6 +896,11 @@ body {
     .exhibition__list--item .mark, .promotion__list--item .mark {
         font-size: 20px;
         padding: 15px;
+    }
+    .contact {
+        &__info, &__map {
+            width: 50%;
+        }
     }
 }
 
@@ -967,10 +972,5 @@ body {
         margin-right: 10px;
         min-width: 200px;
         white-space: nowrap;
-    }
-    .contact {
-        &__info, &__map {
-            width: 50%;
-        }
     }
 }
