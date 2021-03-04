@@ -1112,6 +1112,9 @@ body {
   .contact__info {
     padding-left: 20px;
   }
+  .news::after {
+    display: none;
+  }
 }
 
 @media all and (max-width: 1140px) {
