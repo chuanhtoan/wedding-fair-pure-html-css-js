@@ -150,7 +150,11 @@ body {
             z-index: 999;
             padding-bottom: 16px;
         }
+        &--desktop {
+            display: block;
+        }
         &--hamburger {
+            display: none;
             position: relative;
             &-fixed {
                 z-index: 999;
@@ -831,15 +835,6 @@ body {
     visibility: visible;
     opacity: 1;
     transition: all ease-in-out .25s;
-}
-
-.header__info {
-    &--desktop {
-        display: block;
-    }
-    &--hamburger {
-        display: none;
-    }
 }
 
 /* Responsive */

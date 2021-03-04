@@ -181,7 +181,12 @@ body {
   padding-bottom: 16px;
 }
 
+.header__info--desktop {
+  display: block;
+}
+
 .header__info--hamburger {
+  display: none;
   position: relative;
 }
 
@@ -1080,14 +1085,6 @@ body {
   opacity: 1;
   -webkit-transition: all ease-in-out .25s;
   transition: all ease-in-out .25s;
-}
-
-.header__info--desktop {
-  display: block;
-}
-
-.header__info--hamburger {
-  display: none;
 }
 
 /* Responsive */
