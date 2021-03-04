@@ -442,6 +442,10 @@ body {
                 font-size: 17px;
                 font-weight: 700;
                 color: $primary-color;
+                white-space: nowrap;
+            }
+            &--description {
+                white-space: nowrap;
             }
         }
     }
@@ -650,17 +654,21 @@ body {
     overflow: hidden;
     &__info {
         width: 40%;
-        padding-bottom: 36px;
-        padding-right: 80px;
         padding-left: 150px;
+        padding-right: 80px;
+        padding-bottom: 36px;
         &--container {
             font-family: 'Roboto', sans-serif;
             color: $primary-color;
+            .contact__list {
+                padding-top: 10px;
+            }
             .contact__item {
                 font-size: 16px;
             }
             .contact__icon {
-                padding: 18px 20px 0 0;
+                padding-top: 9px;
+                width: 30px;
             }
             .contact__text {
                 font-size: 18px;
@@ -677,7 +685,8 @@ body {
         height: 350px;
         overflow: hidden;
         &--image {
-            height: 100%;
+            // height: 100%;
+            width: 100%;
         }
     }
 }
@@ -834,6 +843,27 @@ body {
 }
 
 /* Responsive */
+@media all and (max-width: 1440px) {
+    .contact__map--image {
+        height: 100%;
+        width: auto;
+    }
+}
+@media all and (max-width: 1280px) {
+    .wraper {
+        max-width: 1250px;
+    }
+    .exhibition__list--item {
+        width: 49%;
+    }
+    .promotion__list--item {
+        width: 49%;
+    }
+    .contact__info {
+        padding-left: 20px;
+    }
+}
+
 @media all and (max-width: 1140px) {
     .header__info {
         background-size: auto;
@@ -850,28 +880,6 @@ body {
     }
     .contact__info {
         padding-left: 40px;
-    }
-}
-
-.event-schedule__list {
-    h6, p {
-        white-space: nowrap;
-    }
-}
-
-// Media wraper
-@media all and (max-width: 1280px) {
-    .wraper {
-        max-width: 1250px;
-    }
-    .exhibition__list--item {
-        width: 49%;
-    }
-    .promotion__list--item {
-        width: 49%;
-    }
-    .contact__info {
-        padding-left: 20px;
     }
 }
 
@@ -959,5 +967,10 @@ body {
         margin-right: 10px;
         min-width: 200px;
         white-space: nowrap;
+    }
+    .contact {
+        &__info, &__map {
+            width: 50%;
+        }
     }
 }
