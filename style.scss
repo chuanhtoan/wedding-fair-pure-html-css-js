@@ -423,6 +423,10 @@ body {
         overflow-y: scroll;
         z-index: 1;
         position: relative;
+
+        /* Firefox */
+        scrollbar-color: $secondary-color transparent;
+        scrollbar-width: thin;
     }
     &__list {
         margin: 0 150px;
