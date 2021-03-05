@@ -1042,6 +1042,8 @@ body {
           align-items: center;
   color: white;
   z-index: 9999;
+  -webkit-transition: background-color ease .25s;
+  transition: background-color ease .25s;
 }
 
 .fixed-btn__icon {
@@ -1053,6 +1055,10 @@ body {
 .fixed-btn__text {
   font-size: 15px;
   line-height: 1.2;
+}
+
+.fixed-btn:hover, .fixed-btn:active {
+  background-color: #b14559;
 }
 
 /* Hamburger Menu */
