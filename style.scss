@@ -2,6 +2,7 @@
 $primary-color: #D15D73;
 $secondary-color: #C2B093;
 $background-color: #FDFAF2;
+$active-color: #b14559;
 
 * {
     box-sizing: border-box;
@@ -296,6 +297,10 @@ body {
             background-color: $primary-color;
             padding: 10px 20px;
             border-radius: 8px;
+            transition: background-color ease .25s;
+            &:hover, &:active {
+                background-color: $active-color;
+            }
         }
     }
 }
@@ -590,6 +595,10 @@ body {
         padding: 10px 32px;
         font-size: 16px;
         border-radius: 4px;
+        transition: background-color ease .25s;
+        &:hover, &:active {
+            background-color: $active-color;
+        }
     }
 }
 

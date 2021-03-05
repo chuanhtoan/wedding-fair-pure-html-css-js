@@ -364,6 +364,12 @@ body {
   background-color: #D15D73;
   padding: 10px 20px;
   border-radius: 8px;
+  -webkit-transition: background-color ease .25s;
+  transition: background-color ease .25s;
+}
+
+.event-info__info--btn:hover, .event-info__info--btn:active {
+  background-color: #b14559;
 }
 
 .event-schedule {
@@ -755,6 +761,12 @@ body {
   padding: 10px 32px;
   font-size: 16px;
   border-radius: 4px;
+  -webkit-transition: background-color ease .25s;
+  transition: background-color ease .25s;
+}
+
+.promotion__button:hover, .promotion__button:active {
+  background-color: #b14559;
 }
 
 .news {
